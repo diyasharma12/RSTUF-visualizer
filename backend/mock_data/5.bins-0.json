@@ -1,0 +1,22 @@
+{
+  "signatures": [
+    {
+      "keyid": "0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043",
+      "sig": "f1e2d3c4b5a6f7e8d9c0b1a2f3e4d5c6b7a8f9e0d1c2b3a4f5e6d7c8b9a0f1e2d3c4b5a6f7e8d9c0b1a2f3e4d5c6b7a8f9e0d1c2b3a4f5e6d7c8b9a0f1e2d3c4b5a6f7e8d9c0b1a2f3e4d5c6b7a8f9e0d1c2b3a4f5e6d7c8b9a0f1e2d3c4b5a6f7e8d9c0b1a2f3e4d5c6b7a8f9e0d1c2b3a4f5e6d7c8b9a0aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899"
+    }
+  ],
+  "signed": {
+    "_type": "targets",
+    "version": 5,
+    "spec_version": "1.0.31",
+    "expires": "2026-06-19T23:52:07Z",
+    "targets": {
+      "test-artifact.txt": {
+        "hashes": {
+          "blake2b-256": "ea5c9e70974bacbdcb55c6f5651eaa7fb36762cfa82dd09292d46081dc2ecbb1"
+        },
+        "length": 28
+      }
+    }
+  }
+}

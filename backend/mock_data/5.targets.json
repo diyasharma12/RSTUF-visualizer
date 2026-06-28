@@ -1,0 +1,86 @@
+{
+  "signatures": [
+    {
+      "keyid": "0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043",
+      "sig": "d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6"
+    }
+  ],
+  "signed": {
+    "_type": "targets",
+    "version": 5,
+    "spec_version": "1.0.31",
+    "expires": "2026-06-19T23:52:07Z",
+    "targets": {},
+    "delegations": {
+      "keys": {
+        "0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043": {
+          "keytype": "rsa",
+          "scheme": "rsassa-pss-sha256",
+          "keyval": {
+            "public": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwJNtmJy0bky0VZHhJoVw\nVR0oIto8ndLLicnaHPDUfFsv2dTP50uLiYuYhU/RLTh+PIMm9dU5gvfSQ0YIUFHO\nfdcDCBaMNYR9z9c9kvWkfgxP4H7cMdy9ev3yh4pL+ua64AT1598QxmF0RSp9p8P4\nUDPJC4XsgVz3kKeCSQAgz02MJ+KdHyTDP+rgOuWQfVL8bz53puMSSFojiaEJTmZQ\n7eBnI2n6UF6AAV6eo6Dc4cgPQLSjhDqcfoHCyk/AzpTQO5EV+ahofYmV/kQQtr7g\nz8MQXoKRwCbfIcWhPyfPNReOo7fqVK3uK3kkD1ouoNSr9DFRcnUbsX4QR/CQLcoP\nXwIDAQAB\n-----END PUBLIC KEY-----\n"
+          },
+          "x-rstuf-key-name": "Online Key",
+          "x-rstuf-online-key-uri": "fn:0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043"
+        }
+      },
+      "roles": [
+        {
+          "name": "bins-0",
+          "keyids": [
+            "0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043"
+          ],
+          "threshold": 1,
+          "terminating": false,
+          "path_hash_prefixes": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "bins-1",
+          "keyids": [
+            "0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043"
+          ],
+          "threshold": 1,
+          "terminating": false,
+          "path_hash_prefixes": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "name": "bins-2",
+          "keyids": [
+            "0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043"
+          ],
+          "threshold": 1,
+          "terminating": false,
+          "path_hash_prefixes": [
+            "8",
+            "9",
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "bins-3",
+          "keyids": [
+            "0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043"
+          ],
+          "threshold": 1,
+          "terminating": false,
+          "path_hash_prefixes": [
+            "c",
+            "d",
+            "e",
+            "f"
+          ]
+        }
+      ]
+    }
+  }
+}

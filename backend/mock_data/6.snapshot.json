@@ -1,0 +1,34 @@
+{
+  "signatures": [
+    {
+      "keyid": "0d9d3d4bad91c455bc03921daa95774576b86625ac45570d0cac025b08e65043",
+      "sig": "b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff"
+    }
+  ],
+  "signed": {
+    "_type": "snapshot",
+    "version": 6,
+    "spec_version": "1.0.31",
+    "expires": "2026-06-28T05:52:07Z",
+    "meta": {
+      "root.json": {
+        "version": 1
+      },
+      "targets.json": {
+        "version": 5
+      },
+      "bins-0.json": {
+        "version": 5
+      },
+      "bins-1.json": {
+        "version": 1
+      },
+      "bins-2.json": {
+        "version": 1
+      },
+      "bins-3.json": {
+        "version": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+# ============================================================
+# TUF Metadata Visualizer — Standalone Docker Compose
+# For developing/testing the visualizer independently
+# ============================================================
+
+services:
+  # Mock TUF metadata server (simulates the RSTUF web server)
+  mock-web-server:
+    image: python:3.13-slim
+    command: python -m http.server -d /data 8080
+    volumes:
+      - ./backend/mock_data:/data
+    ports:
+      - "8080:8080"
+
+  # The visualizer app
+  tuf-visualizer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - STORAGE_URL=http://mock-web-server:8080
+      - MOCK_MODE=false
+    depends_on:
+      - mock-web-server
