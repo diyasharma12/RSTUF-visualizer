@@ -140,12 +140,7 @@ function renderRootCard(root) {
 
   el.innerHTML = `
     <div class="health-card__header">
-      <div style="display:flex;align-items:center;gap:10px">
-        <div class="health-card__icon health-card__icon--root">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/></svg>
-        </div>
-        <span class="health-card__title">Root</span>
-      </div>
+      <span class="health-card__title">Root</span>
       <span class="health-card__status health-card__status--${expiry.status}">${expiry.label}</span>
     </div>
     <div class="health-card__body">
@@ -178,12 +173,7 @@ function renderTargetsCard(targets) {
 
   el.innerHTML = `
     <div class="health-card__header">
-      <div style="display:flex;align-items:center;gap:10px">
-        <div class="health-card__icon health-card__icon--targets">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-        </div>
-        <span class="health-card__title">Targets</span>
-      </div>
+      <span class="health-card__title">Targets</span>
       <span class="health-card__status health-card__status--${expiry.status}">${expiry.label}</span>
     </div>
     <div class="health-card__body">
@@ -211,12 +201,7 @@ function renderSnapshotCard(snapshot) {
 
   el.innerHTML = `
     <div class="health-card__header">
-      <div style="display:flex;align-items:center;gap:10px">
-        <div class="health-card__icon health-card__icon--snapshot">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
-        </div>
-        <span class="health-card__title">Snapshot</span>
-      </div>
+      <span class="health-card__title">Snapshot</span>
       <span class="health-card__status health-card__status--${expiry.status}">${expiry.label}</span>
     </div>
     <div class="health-card__body">
@@ -245,12 +230,7 @@ function renderTimestampCard(timestamp) {
 
   el.innerHTML = `
     <div class="health-card__header">
-      <div style="display:flex;align-items:center;gap:10px">
-        <div class="health-card__icon health-card__icon--timestamp">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <span class="health-card__title">Timestamp</span>
-      </div>
+      <span class="health-card__title">Timestamp</span>
       <span class="health-card__status health-card__status--${expiry.status}">${expiry.label}</span>
     </div>
     <div class="health-card__body">

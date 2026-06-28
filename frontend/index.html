@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="RSTUF TUF Metadata Visualizer — Interactive dashboard for exploring Repository Service for TUF metadata, signing keys, delegation trees, and artifact integrity.">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#ffffff">
   <title>RSTUF Metadata Visualizer — TUF Repository Dashboard</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2'><path d='M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z'/></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2'><path d='M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z'/></svg>">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -15,11 +15,6 @@
     <!-- ===== TOPBAR ===== -->
     <header class="topbar" role="banner">
       <div class="topbar-brand">
-        <div class="topbar-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
-          </svg>
-        </div>
         <h1 class="topbar-title">RSTUF Metadata Visualizer</h1>
       </div>
 
@@ -77,11 +72,6 @@
       <!-- LEFT: Delegation Tree -->
       <aside class="glass-card tree-panel" aria-label="Delegation tree">
         <div class="tree-panel__title">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
-            <polyline points="2 17 12 22 22 17"/>
-            <polyline points="2 12 12 17 22 12"/>
-          </svg>
           Delegation Tree
         </div>
         <nav id="delegation-tree" aria-label="TUF delegation hierarchy">
@@ -106,11 +96,6 @@
       <!-- RIGHT: Detail Panel -->
       <section class="glass-card detail-panel" id="detail-panel" aria-label="Role details" aria-live="polite">
         <div class="detail-panel__header">
-          <div class="detail-panel__role-icon" id="detail-role-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
-            </svg>
-          </div>
           <div class="detail-panel__role-info">
             <div class="detail-panel__role-name" id="detail-role-name">Select a role</div>
             <div class="detail-panel__role-subtitle" id="detail-role-subtitle">Click a node in the tree to view its details</div>
@@ -118,13 +103,6 @@
         </div>
         <div class="detail-panel__content" id="detail-panel-content">
           <div class="empty-state" id="detail-empty-state">
-            <div class="empty-state__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:48px;height:48px">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="16" x2="12" y2="12"/>
-                <line x1="12" y1="8" x2="12.01" y2="8"/>
-              </svg>
-            </div>
             <div class="empty-state__text">Loading metadata…</div>
             <div class="empty-state__sub">Connecting to the RSTUF server</div>
           </div>

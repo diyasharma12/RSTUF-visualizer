@@ -158,7 +158,7 @@ function renderInfoGrid(data) {
 function renderRootDetails(panel, data) {
   let html = `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.info} Overview</div>
+      <div class="detail-section__title">Overview</div>
       ${renderInfoGrid(data)}
     </div>
   `;
@@ -167,8 +167,8 @@ function renderRootDetails(panel, data) {
   if (data.keys && data.keys.length > 0) {
     html += `
       <div class="detail-section">
-        <div class="detail-section__title">${ICONS.key} Signing Keys</div>
-        <div style="overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+        <div class="detail-section__title">Signing Keys</div>
+        <div style="overflow-x: auto; border: 1px solid var(--border-subtle);">
           <table class="data-table" id="root-keys-table">
             <thead>
               <tr>
@@ -218,7 +218,7 @@ function renderRootDetails(panel, data) {
   if (data.roles) {
     html += `
       <div class="detail-section">
-        <div class="detail-section__title">${ICONS.layers} Signing Thresholds</div>
+        <div class="detail-section__title">Signing Thresholds</div>
     `;
 
     for (const [roleName, roleData] of Object.entries(data.roles)) {
@@ -251,7 +251,7 @@ function renderRootDetails(panel, data) {
 function renderTargetsDetails(panel, data) {
   let html = `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.info} Overview</div>
+      <div class="detail-section__title">Overview</div>
       ${renderInfoGrid(data)}
     </div>
   `;
@@ -260,7 +260,7 @@ function renderTargetsDetails(panel, data) {
   if (data.delegations && data.delegations.length > 0) {
     html += `
       <div class="detail-section">
-        <div class="detail-section__title">${ICONS.layers} Delegated Roles</div>
+        <div class="detail-section__title">Delegated Roles</div>
         <div class="delegation-list" id="targets-delegations-list">
     `;
 
@@ -307,23 +307,22 @@ function renderBinDetails(panel, data) {
 
   let html = `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.info} Overview</div>
+      <div class="detail-section__title">Overview</div>
       ${renderInfoGrid(data)}
     </div>
   `;
 
   html += `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.package} Artifacts</div>
+      <div class="detail-section__title">Artifacts</div>
       <div class="artifact-count">
-        ${ICONS.file}
         ${artifactCount} artifact${artifactCount !== 1 ? 's' : ''}
       </div>
   `;
 
   if (artifactCount > 0) {
     html += `
-      <div style="overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+      <div style="overflow-x: auto; border: 1px solid var(--border-subtle);">
         <table class="data-table" id="bin-artifacts-table">
           <thead>
             <tr>
@@ -388,7 +387,7 @@ function renderBinDetails(panel, data) {
 function renderSnapshotDetails(panel, data) {
   let html = `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.info} Overview</div>
+      <div class="detail-section__title">Overview</div>
       ${renderInfoGrid(data)}
     </div>
   `;
@@ -396,8 +395,8 @@ function renderSnapshotDetails(panel, data) {
   if (data.meta && Object.keys(data.meta).length > 0) {
     html += `
       <div class="detail-section">
-        <div class="detail-section__title">${ICONS.layers} Tracked Metadata Versions</div>
-        <div style="overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); background: rgba(15,23,42,0.3);">
+        <div class="detail-section__title">Tracked Metadata Versions</div>
+        <div style="overflow-x: auto; border: 1px solid var(--border-subtle); background: var(--bg-secondary);">
           <table class="meta-table" id="snapshot-meta-table">
     `;
 
@@ -433,7 +432,7 @@ function renderTimestampDetails(panel, data) {
 
   let html = `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.info} Overview</div>
+      <div class="detail-section__title">Overview</div>
       <div class="info-grid">
         <div class="info-item">
           <div class="info-item__label">Version</div>
@@ -456,8 +455,8 @@ function renderTimestampDetails(panel, data) {
     const countdownValue = expiry.countdown || '00:00:00';
     html += `
       <div class="detail-section">
-        <div class="detail-section__title">${ICONS.clock} Live Countdown</div>
-        <div style="text-align:center; padding: var(--space-lg); background: rgba(15,23,42,0.4); border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+        <div class="detail-section__title">Live Countdown</div>
+        <div style="text-align:center; padding: var(--space-lg); background: var(--bg-secondary); border: 1px solid var(--border-subtle);">
           <div class="health-card__countdown health-card__expiry-value--${expiry.status}" id="detail-timestamp-countdown" style="font-size: 2rem; letter-spacing: 0.08em;">
             ${countdownValue}
           </div>
@@ -471,7 +470,7 @@ function renderTimestampDetails(panel, data) {
 
   html += `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.link} Role Relationship</div>
+      <div class="detail-section__title">Role Relationship</div>
       <div class="security-note">
         ${ICONS.info}
         <span class="security-note__text">
@@ -495,7 +494,7 @@ function renderTimestampDetails(panel, data) {
 function renderGenericDetails(panel, data) {
   let html = `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.info} Overview</div>
+      <div class="detail-section__title">Overview</div>
       ${renderInfoGrid(data)}
     </div>
   `;
@@ -509,8 +508,8 @@ function renderArtifactsTable(targets) {
 
   let html = `
     <div class="detail-section">
-      <div class="detail-section__title">${ICONS.package} Direct Artifacts</div>
-      <div style="overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+      <div class="detail-section__title">Direct Artifacts</div>
+      <div style="overflow-x: auto; border: 1px solid var(--border-subtle);">
         <table class="data-table">
           <thead><tr><th>Filename</th><th>Hash</th><th>Size</th></tr></thead>
           <tbody>

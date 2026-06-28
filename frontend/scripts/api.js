@@ -10,7 +10,7 @@ const API_BASE = window.location.origin;
  * @param {number} timeoutMs
  * @returns {Promise<Object>}
  */
-async function apiFetch(url, timeoutMs = 15000000) {
+async function apiFetch(url, timeoutMs = 1500000000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
 
